@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: slateblue;
+    background-color: #010615;
     position: relative;
     display: flex;
     align-items: center;
@@ -17,13 +17,37 @@ body {
 }
 
 .container {
+    position: relative;
     height: 90%;
     width: 90%;
-    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.container:before{
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    top: -2px;
+    right: -2px;
+    z-index: 1;
+    background: linear-gradient(235deg, #ff005e, #010615, #f6ff00);
+}
+
+.container:after{
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    top: -2px;
+    right: -2px;
+    z-index: -2;
+    background: linear-gradient(235deg, #ff005e, #010615, #f6ff00);
+    filter: blur(40px);
 }
 
 .player0_panel, .player1_panel {
@@ -40,30 +64,31 @@ body {
     position: relative;
     margin-top: 10% ;
     margin-bottom: 10%;
+    color: white;
 }
 
 .score {
     font-size: 80px;
     font-weight: 100;
-    color: #EB4D4D;
+    color: #f6ff00;
     margin-bottom: 10%;
 }
 
-.active { background-color: lightgray; }
+.active { background-color: rgba(255, 255, 255, 0.1); }
 .active .player_name { font-weight:300; }
 
 .active .player_name::after {
     content: "\2022";
     font-size: 47px;
     position: absolute;
-    color: #EB4D4D;
+    color: #f6ff00;
     top: -2%;
     right: 25%;
 }
 
 .scorecard {
     margin-top: 20%;
-    background-color: #EB4D4D;
+    background-color: #f6ff00;
     color: white;
     width: 40%;
     margin-left: auto;
@@ -110,7 +135,7 @@ button:hover i { margin-right:2.5% }
 button:focus { outline: none; }
 
 i {
-    color: #EB4D4D;
+    color: #f6ff00;
     display: inline-flex;
     line-height: 1;
     vertical-align: text-top;
@@ -127,3 +152,54 @@ i {
 
 .winner { background-color: #f7f7f7; }
 .winner .player_name { font-weight:300; color:#EB4D4D; }
+
+@media (max-width : 400px) {
+    .player_name {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 150;
+    }
+
+    .active .player_name::after {
+        font-size: 27.5px;
+        position: absolute;
+        top: -27.5%;
+        right: 20px;
+    }
+
+    .scorecard{
+        position: absolute;
+        top: 72.5%;
+        left: 12.5%;
+        width: 75%;
+        height: 15%;
+    }
+
+    .score_label{
+        font-size: 18px;
+    }
+
+    .new_game_button{
+        position: absolute;
+        bottom: 20%;
+    }
+
+    .load_button{
+        position: absolute;
+        bottom: 30%;
+    }
+
+    .roll_dice_button{
+        position: absolute;
+        bottom: 27.5%;
+    }
+
+    .dice {
+        position: absolute;
+        width: 40%;
+        height: 20%;
+        bottom: 45%;
+        background-color: #f6ff00;
+        border-radius: 15px;
+    }
+}
