@@ -87,8 +87,9 @@ var line5 = "4. The player can choose to HOLD, which means that his ROUND Score 
 var line6 = "5. The first one to score 100 points wins the game";
 var line7 = "GLOBAL SCORE is the score below the PLAYER TAGS";
 var line8 = "ROUND SCORE is the score in the yellow box";
+var line9 = "6. Once the game is over click on the NEW GAME Button to start a new game";
 
-var rules = line1 + "\n" + line2 + "\n" + line3 + "\n" + line4 + "\n" + line5 + "\n" + line6 + "\n" + line7 + "\n" + line8 ;
+var rules = line1 + "\n" + line2 + "\n" + line3 + "\n" + line4 + "\n" + line5 + "\n" + line6 + "\n" + line9 + "\n" + line7 + "\n" + line8 ;
 
 function rulesAlert() {
     alert(rules);
