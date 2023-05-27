@@ -82,7 +82,7 @@ function init () {
     gamePlaying = true;
 }
 
-var line1 = "GAME RULES :";
+var line1 = "GAME RULES (DO NOT TILT THE PHONE) :";
 var line2 = "1. The game has 2 players, playing in rounds";
 var line3 = "2. In each turn a player rolls a dice as many times as he wishes. Each result gets added to the ROUND Score";
 var line4 = "3. BUT IF the player rolls a 1, all his ROUND Score gets lost. After that it's the next player's turn";
