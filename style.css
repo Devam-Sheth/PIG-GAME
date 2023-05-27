@@ -166,6 +166,99 @@ i {
 .winner { background-color: #f7f7f7; }
 .winner .player_name { font-weight:300; color:#EB4D4D; }
 
+@media (max-width : 1100px) {
+    .player_name {
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 150;
+    }
+
+    .active .player_name::after {
+        font-size: 30px;
+        position: absolute;
+        top: -20%;
+        right: 150px;
+    }
+}
+
+@media (max-height : 400px) {
+    .score_label{
+        font-size: 18px;
+        bottom: 20px;
+    }
+
+    .current_score {
+        font-size: 30px;
+        padding-top: 0%;
+    }
+
+    .new_game_button{
+        position: absolute;
+        top: 17.5%;
+    }
+
+    .load_button{
+        position: absolute;
+        bottom: 7.5%;
+    }
+
+    .roll_dice_button{
+        position: absolute;
+        bottom: 10%;
+    }
+
+    .scorecard{
+        position: absolute;
+        top: 35%;
+        left: 12.5%;
+        width: 75%;
+        height: 30%;
+    }
+
+    .score {
+        font-size: 60px;
+    }
+
+    .dice {
+        height: 30%;
+        width: 10%;
+    }
+}
+
+@media (max-width : 700px) {
+    .player_name {
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 150;
+    }
+
+    .active .player_name::after {
+        font-size: 30px;
+        position: absolute;
+        top: -20%;
+        right: 60px;
+    }
+
+    .score_label{
+        font-size: 18px;
+    }
+
+    .new_game_button{
+        position: absolute;
+        bottom: 40%;
+    }
+
+    .load_button{
+        position: absolute;
+        bottom: 20%;
+    }
+
+    .roll_dice_button{
+        position: absolute;
+        bottom: 20%;
+    }
+}
+
 @media (max-width : 800px) {
     .player_name {
         font-size: 25px;
