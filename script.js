@@ -2,24 +2,6 @@ var scores, roundScore, activePlayer,gamePlaying;
 
 gamePlaying = true;
 
-function init () {
-    scores = [0,0] ;
-    roundScore = 0;
-    activePlayer = 0;
-    document.getElementById('score-0').textContent = '0';
-    document.getElementById('score-1').textContent = '0';
-    document.getElementById('current_score-0').textContent = '0';
-    document.getElementById('current_score-1').textContent = '0';
-    document.querySelector('.dice').style.display = 'none';
-    document.getElementById('player_name-0').textContent = 'Player 1';
-    document.getElementById('player_name-1').textContent = 'Player 2';
-    document.querySelector('.player0_panel').classList.remove('winner');
-    document.querySelector('.player1_panel').classList.remove('winner');
-    document.querySelector('.player0_panel').classList.remove('active');
-    document.querySelector('.player1_panel').classList.remove('active');
-    document.querySelector('.player0_panel').classList.add('active');
-}
-
 init();
 
 //dice = Math.floor(Math.random() * 6) + 1;
@@ -35,7 +17,7 @@ function nextPlayer() {
     document.querySelector('.player0_panel').classList.toggle('active');
     document.querySelector('.player1_panel').classList.toggle('active');
 
-    document.querySelector('.dice').style.display = 'none';
+    document.querySelector('.dice').style.display = './img/dice-1.png';
 }
 
 document.querySelector('.roll_dice_button').addEventListener('click', function() {
@@ -78,6 +60,24 @@ document.querySelector('.load_button').addEventListener('click', function() {
 });
 
 document.querySelector('.new_game_button').addEventListener('click', init);
+
+function init () {
+    scores = [0,0] ;
+    roundScore = 0;
+    activePlayer = 0;
+    document.getElementById('score-0').textContent = '0';
+    document.getElementById('score-1').textContent = '0';
+    document.getElementById('current_score-0').textContent = '0';
+    document.getElementById('current_score-1').textContent = '0';
+    document.querySelector('.dice').style.display = 'none';
+    document.getElementById('player_name-0').textContent = 'Player 1';
+    document.getElementById('player_name-1').textContent = 'Player 2';
+    document.querySelector('.player0_panel').classList.remove('winner');
+    document.querySelector('.player1_panel').classList.remove('winner');
+    document.querySelector('.player0_panel').classList.remove('active');
+    document.querySelector('.player1_panel').classList.remove('active');
+    document.querySelector('.player0_panel').classList.add('active');
+}
 
 var line1 = "GAME RULES :";
 var line2 = "1. The game has 2 players, playing in rounds";
