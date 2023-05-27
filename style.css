@@ -181,17 +181,17 @@ i {
 
     .new_game_button{
         position: absolute;
-        bottom: 25%;
+        bottom: 27.5%;
     }
 
     .load_button{
         position: absolute;
-        bottom: 35%;
+        bottom: 30%;
     }
 
     .roll_dice_button{
         position: absolute;
-        bottom: 27.5%;
+        bottom: 25%;
     }
 
     .dice {
