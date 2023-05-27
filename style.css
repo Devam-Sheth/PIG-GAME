@@ -181,66 +181,6 @@ i {
     }
 }
 
-@media (max-width : 900px) {
-    .active .player_name::after {
-        font-size: 30px;
-        position: absolute;
-        top: -20%;
-        right: 100px;
-    }
-
-    .dice {
-        position: absolute;
-        width: 20%;
-        height: 20%;
-        bottom: 40%;
-    }
-}
-
-@media (max-height : 400px) {
-    .score_label{
-        font-size: 18px;
-        bottom: 20px;
-    }
-
-    .current_score {
-        font-size: 30px;
-        padding-top: 0%;
-    }
-
-    .new_game_button{
-        position: absolute;
-        top: 17.5%;
-    }
-
-    .load_button{
-        position: absolute;
-        bottom: 7.5%;
-    }
-
-    .roll_dice_button{
-        position: absolute;
-        bottom: 10%;
-    }
-
-    .scorecard{
-        position: absolute;
-        top: 35%;
-        left: 20%;
-        width: 60%;
-        height: 27.5%;
-    }
-
-    .score {
-        font-size: 60px;
-    }
-
-    .dice {
-        height: 30%;
-        width: 10%;
-    }
-}
-
 @media (max-width : 700px) {
     .player_name {
         font-size: 25px;
