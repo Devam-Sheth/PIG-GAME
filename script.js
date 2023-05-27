@@ -78,3 +78,18 @@ document.querySelector('.load_button').addEventListener('click', function() {
 });
 
 document.querySelector('.new_game_button').addEventListener('click', init);
+
+var line1 = "GAME RULES :";
+var line2 = "1. The game has 2 players, playing in rounds";
+var line3 = "2. In each turn a player rolls a dice as many times as he wishes. Each result gets added to the ROUND Score";
+var line4 = "3. BUT IF the player rolls a 1, all his ROUND Score gets lost. After that it's the next player's turn";
+var line5 = "4. The player can choose to HOLD, which means that his ROUND Score gets added to his GLOBAL Score. After that, it's the next player's turn";
+var line6 = "5. The first one to score 100 points wins the game";
+var line7 = "GLOBAL SCORE is the score below the PLAYER TAGS";
+var line8 = "ROUND SCORE is the score in the yellow box";
+
+var rules = line1 + "\n" + line2 + "\n" + line3 + "\n" + line4 + "\n" + line5 + "\n" + line6 + "\n" + line7 + "\n" + line8 ;
+
+function rulesAlert() {
+    alert(rules);
+}

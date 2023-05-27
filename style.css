@@ -16,6 +16,17 @@ body {
     font-family: Lato;
 }
 
+input {
+    position: absolute;
+    top: 5px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    font-family: Lato;
+    color: #f6ff00;
+    cursor: pointer;
+}
+
 .container {
     position: relative;
     height: 90%;
